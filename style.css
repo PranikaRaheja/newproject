@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.parallax {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.parallax-content1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  transform: translate(-10%, -10%); /* Center the element */
+  text-align: center;
+  color: #fff;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-1000px); /* Initial position off-screen */
+  transition: opacity 2s ease, transform 2s ease; /* Combine transitions */
+}
+
+.parallax-content1.visible {
+  opacity: 1; /* Visible when scrolled into view */
+  transform: translateX(0); /* Slide in from left */
+}
+button {
+  background-color: #807c7c;
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 10px;
+}
+button:hover {
+  background-color: #fff;
+}
